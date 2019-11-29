@@ -55,8 +55,7 @@ function callFriend(name) {
 //Code Here
 
 const callJake = callFriend('Jake');
-callJake('435-555-9248');
-console.log(callJake('435-555-9248'))
+callJake(435-555-9248);
 
 
 
@@ -225,9 +224,11 @@ function secretNumber() {
 
 function timeOutCounter() {
   for (var i = 0; i <= 5; i++) {
-    setTimeout(function() {
-      console.log(i);
-    }, i * 1000);
-  }
+    function inner(i) {
+      setTimeout(function () {
+      }, i * 1000)
+    }
+    inner(i)
+  }   
 }
 timeOutCounter();
